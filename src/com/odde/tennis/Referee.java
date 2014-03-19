@@ -7,6 +7,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Referee extends Activity {
+
+    private int score_for_player1 = 0;
+
     /**
      * Called when the activity is first created.
      */
@@ -16,9 +19,21 @@ public class Referee extends Activity {
         setContentView(R.layout.main);
     }
 
-
     public void player1Score(View view) {
+        score_for_player1++;
+
+        displayScore(getScore());
+    }
+
+    private String getScore() {
+        if(score_for_player1 == 2){
+            return "Thirty Love";
+        }
+        return "Fifteen Love";
+    }
+
+    private void displayScore(String score) {
         TextView scoreView = (TextView) findViewById(R.id.scoreView);
-        scoreView.setText("Fifteen Love");
+        scoreView.setText(score);
     }
 }
