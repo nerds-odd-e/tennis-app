@@ -9,5 +9,10 @@
             android:layout_height="wrap_content"
             android:text="Love All"
             android:id="@+id/scoreView"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 1 Score"
+            android:id="@+id/player1Score" android:onClick="player1Score"/>
 </LinearLayout>
 
