@@ -1,5 +1,5 @@
-import android.R;
 import android.widget.TextView;
+import com.odde.tennis.R;
 import com.odde.tennis.Referee;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,7 +13,7 @@ public class RefereeActivityTest {
     public void display_score(){
         Referee referee = new Referee();
         referee.onCreate(null);
-//        TextView scoreView = (TextView) referee.findViewById(R.id.);
-//        assertEquals("Love All", scoreView.getText().toString());
+        TextView scoreView = (TextView) referee.findViewById(R.id.scoreView);
+        assertEquals("Love All", scoreView.getText().toString());
     }
 }
